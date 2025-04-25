@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ইমরান মাহমুদের ব্লগ</title>
+    <style>
+        body {
+            font-family: 'Noto Sans Bengali', sans-serif;
+            background-color: #f9f9f9;
+            color: #111;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        body.dark-mode {
+            background-color: #121212;
+            color: #eee;
+        }
+        header {
+            background-color: #004466;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            background-color: #006680;
+            padding: 0.5rem;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+        .container {
+            padding: 2rem;
+        }
+        .blog-post {
+            background-color: white;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: background-color 0.3s;
+        }
+        body.dark-mode .blog-post {
+            background-color: #1e1e1e;
+        }
+        footer {
+            background-color: #004466;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+        .toggle-btn {
+            margin: 1rem;
+            padding: 0.5rem 1rem;
+            background-color: #008cba;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ইমরান মাহমুদের ব্লগ</h1>
+        <p>ব্যক্তিগত ভাবনা, কবিতা এবং আরও অনেক কিছু</p>
+        <button class="toggle-btn" onclick="toggleDarkMode()">🌙 ডার্ক মোড</button>
+    </header>
+    <nav>
+        <a href="#">হোম</a>
+        <a href="#">আমার সম্পর্কে</a>
+        <a href="#">যোগাযোগ</a>
+    </nav>
+    <div class="container">
+        <div class="blog-post">
+            <h2>আমার প্রথম পোস্ট</h2>
+            <p>এটি আমার ব্লগের প্রথম পোস্ট। এখানে আমি আমার চিন্তা, কবিতা এবং অভিজ্ঞতা শেয়ার করব।</p>
+        </div>
+        <div class="blog-post">
+            <h2>কবিতা: নিঃশব্দ বিকেল</h2>
+            <p>নিঃশব্দ বিকেলে, মন হারায় ভাবনার রাজ্যে...</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; ২০২৫ ইমরান মাহমুদ</p>
+    </footer>
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+</body>
+</html>
